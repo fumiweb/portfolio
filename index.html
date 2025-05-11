@@ -1,138 +1,45 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ポートフォリオ | Webディレクター</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Noto Sans JP', sans-serif;
-      background: #fff;
-      color: #333;
-      line-height: 1.8;
-    }
-    section {
-      padding: 80px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    h1, h2 {
-      font-weight: 700;
-    }
-    h1 { font-size: 2.4rem; margin-bottom: 10px; }
-    h2 { font-size: 1.8rem; margin-bottom: 30px; text-align: center; }
-    p { font-size: 1rem; }
-
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://source.unsplash.com/1600x900/?creative,teamwork') no-repeat center center / cover;
-      color: #fff;
-      text-align: center;
-      padding: 120px 20px;
-    }
-    .hero h1 {
-      font-size: 2.8rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-top: 15px;
-    }
-
-    .about p {
-      font-size: 1.1rem;
-      text-align: center;
-    }
-
-    .works-slider {
-      display: flex;
-      overflow-x: auto;
-      gap: 20px;
-      scroll-snap-type: x mandatory;
-    }
-    .work-card {
-      flex: 0 0 80%;
-      background: #f9f9f9;
-      padding: 20px;
-      border-radius: 12px;
-      scroll-snap-align: start;
-    }
-    .skills ul {
-      display: flex;
-      flex-wrap: wrap;
-      list-style: none;
-      gap: 15px;
-      justify-content: center;
-    }
-    .skills li {
-      background: #eee;
-      padding: 10px 20px;
-      border-radius: 8px;
-    }
-
-    .contact {
-      text-align: center;
-    }
-    .contact a {
-      display: inline-block;
-      margin: 10px;
-      text-decoration: none;
-      color: #555;
-      font-weight: bold;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ポートフォリオ｜Webディレクター</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>ユーザー体験をデザインし、チームをつなぐディレクター</h1>
+      <p class="subtitle">プロジェクトに“意味と動き”を与え、<br>メンバーの想いを“かたち”にする通訳者</p>
+    </div>
+  </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h1>ユーザー体験をデザインし、チームをつなぐディレクター</h1>
-    <p>プロジェクトに“意味と動き”を与え、メンバーの想いを“かたち”にする通訳者</p>
-  </section>
-
-  <!-- About -->
   <section class="about">
     <h2>About</h2>
-    <p>元エンジニアとしての技術理解を活かし、進行管理とクリエイティブの橋渡しを担ってきました。<br>UXへの配慮とチームビルディングを大切にしています。</p>
+    <p>元エンジニアとしての技術理解を活かし、進行管理とクリエイティブの橋渡しを担うWebディレクター。チームの想いをまとめ、ユーザー視点で価値あるアウトプットを実現します。</p>
   </section>
 
-  <!-- Works -->
   <section class="works">
     <h2>Works</h2>
-    <div class="works-slider">
-      <div class="work-card">
-        <h3>ゴルフ動画コンテンツページ</h3>
-        <p>担当：構成案・進行管理<br>目的：会員満足度向上<br>結果：視聴回数 月間5,000回超</p>
-      </div>
-      <div class="work-card">
-        <h3>CMS導入LP</h3>
-        <p>担当：要件定義・UIディレクション<br>目的：営業効率の向上</p>
-      </div>
-      <!-- 追加可能 -->
+    <div class="slider">
+      <div class="slide">案件A</div>
+      <div class="slide">案件B</div>
+      <div class="slide">案件C</div>
     </div>
   </section>
 
-  <!-- Skills / Strength -->
   <section class="skills">
     <h2>Skills & Strength</h2>
     <ul>
-      <li>Figma</li>
-      <li>Notion</li>
-      <li>HTML/CSS</li>
-      <li>進行管理</li>
-      <li>UX設計</li>
-      <li>チームマネジメント</li>
+      <li>Figma / Notion / HTML・CSS（基礎）</li>
+      <li>チームマネジメント・進行管理・UX設計</li>
     </ul>
   </section>
 
-  <!-- Contact -->
   <section class="contact">
     <h2>Contact</h2>
-    <p>お気軽にご連絡ください</p>
-    <a href="https://x.com/yourprofile" target="_blank">X</a>
-    <a href="https://www.wantedly.com/users/yourprofile" target="_blank">Wantedly</a>
-    <a href="https://note.com/yourprofile" target="_blank">note</a>
+    <p><a href="https://twitter.com/youraccount" target="_blank">X（旧Twitter）</a>｜<a href="https://note.com/youraccount" target="_blank">note</a>｜<a href="mailto:your.email@example.com">your.email@example.com</a></p>
   </section>
-
 </body>
 </html>
